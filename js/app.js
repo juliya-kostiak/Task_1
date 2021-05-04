@@ -9,23 +9,6 @@ window.onload = function () {
   		var arr = this.arr.value;
   		let k=0, k1=0,k2=0,flag=0,sum=0,l=-1;
 
-  		function checkLimit() {
-		if(this.value.length >n){
-			
-			//document.querySelector('form[name="reg"]').reset();
-			this.value = this.value.slice(0, n);
-
-		} 
-
-		this.nextElementSibling.innerHTML=`${this.value.length}/20` 
-		
-		}
-
-		let elems = document.querySelectorAll(`input`)[1];
-		elems.addEventListener("input", checkLimit);
-			
-
-
   		arr=arr.split(" ");
 
   		let min=arr[0];
